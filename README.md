@@ -2,7 +2,7 @@
 
 ## App's FrontEnd
 
-[Click here to go to the app's backend(Server).][frontend]
+[Click here to go to the app's frontend.][frontend]
 
 ## App's Mobile
 
