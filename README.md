@@ -1,3 +1,14 @@
+# Barber App
+
+## App's FrontEnd
+
+[Click here to go to the app's backend(Server).][frontend]
+
+## App's Mobile
+
+[Click here to go to the mobile app.][mobileclient]
+
+
 ## Docker Container
 
 MySQL database instance
@@ -44,3 +55,9 @@ yarn sequelize db:migrate
 ```bash
 yarn sequelize db:migrate:undo
 ```
+
+
+
+[server]: https://github.com/petrovick/gobarber.NodeJS
+[frontend]: https://github.com/petrovick/gobarber.ReactJS
+[mobileclient]: https://github.com/petrovick/gobarber.ReactNative
