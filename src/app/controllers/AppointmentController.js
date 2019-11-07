@@ -68,7 +68,7 @@ class AppointmentController {
     const hourStart = startOfHour(parseISO(date));
 
     if (isBefore(hourStart, new Date())) {
-      return res.status(400).json({ error: 'parsed date not permitted.' });
+      return res.status(400).json({ error: 'past date not permitted.' });
     }
 
     /**
