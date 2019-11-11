@@ -12,12 +12,13 @@ import Queue from '../../lib/Queue';
 class AppointmentController {
   async index(req, res) {
     const { page } = req.query;
+
     const appointments = await Appointment.findAll({
       where: { user_id: req.userId, canceled_at: null },
       attributes: ['id', 'date', 'past', 'cancelable'],
       order: ['date'],
       limit: 20,
-      offset: (page - 1) * 20,
+      offset: ((page || 1) - 1) * 20,
       include: [
         {
           model: User,
